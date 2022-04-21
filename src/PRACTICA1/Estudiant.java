@@ -8,6 +8,6 @@ public class Estudiant extends Persona {                 //tener lo de persona
         }
         public String obtenerDades(){
         //me de lo mismo que persona mas la nota
-         return super.obtenerDades() + " que tiene nota " + this.nota;
+         return super.obtenerDades() + " que tiene nota: " + this.nota;
         }
 }

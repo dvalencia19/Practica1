@@ -11,6 +11,6 @@ public class Persona {              //si hacemos solo una clase suele ser privad
     }
 
     public String obtenerDades(){
-        return " persona que es diu " + this.nom;
+        return " persona que es diu: " + this.nom;
     }
 }

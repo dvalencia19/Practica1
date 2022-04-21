@@ -1,17 +1,18 @@
 package PRACTICA1;
+import java.util.Date;
 
 public class ProfessorSubstitut extends Professor {
-    private String datainicial;
-    private  String datafi;
+    private Date datainicial;
+    private  Date datafi;
     public ProfessorSubstitut() {}
-    public void posardatainicial(String datainicial){
+    public void posardatainicial(Date datainicial){
         this.datainicial = datainicial;
     }
-    public void posardatafi(String datafi){
+    public void posardatafi(Date datafi){
         this.datafi = datafi;
     }
     public String obtenerDades(){
-        return  super.obtenerDades() + " inicio en " + this.datainicial + " termino en " + this.datafi;
+        return  super.obtenerDades();
     }
     }
 

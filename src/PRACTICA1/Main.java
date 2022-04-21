@@ -1,5 +1,7 @@
 package PRACTICA1;
 
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
         Persona p1 = new Persona();                                    //cree una persona
@@ -29,18 +31,17 @@ public class Main {
 
         ProfessorSubstitut pr = new ProfessorSubstitut();
         pr.posarsou(1.700);
-        pr.posardatainicial("3/12/2002");
-        pr.posardatafi("12/3/2010");
+        Date datainicial = new Date(2002, 3 ,12);
+        Date  datafi= new Date(2010, 2 ,5);
+        pr.posardatafi(datafi);
+        pr.posardatainicial(datainicial);
         pr.canviarNom("Juan");
         dades = pr.obtenerDades();
-        System.out.println(dades);
+        System.out.println(dades + " inicio en: " + datainicial.getDate() + "/" + datainicial.getMonth() + "/" + datainicial.getYear() + " y termino en: " + datafi.getDate() + "/" + datafi.getMonth() + "/" + datafi.getYear());
 
         Institut inst = new Institut();
+        dades = inst.obtenerDades();
+        System.out.println(dades);
 
-
-
-
-        //System.out.println(p1.nom);
-        //System.out.println(p1.dni);
     }
 }

@@ -7,6 +7,6 @@ public class Professor extends Persona {
         this.sou = sou;
     }
     public String obtenerDades(){
-        return super.obtenerDades() + " que tiene un sueldo " + this.sou;
+        return super.obtenerDades() + " que tiene un sueldo: " + this.sou;
     }
 }
