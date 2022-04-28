@@ -1,31 +1,28 @@
 package PRACTICA1;
+import java.time.Period;
 import java.util.ArrayList;
+import  java.util.List;
 
 public class Institut {
     private String nom1;
-    private String nom2;
+    List<Persona> personas = new ArrayList<>();
+    private String afegirProfe;
+    private String afegirEstudiant;
+    public void Nominst(String nom1) {
+        this.nom1 = nom1;
+    }
+    public void afegirProfe(Professor profe ){
+        this.personas.add(profe);
 
-
-    public Institut() {
+    }
+    public void afegirEstudiant(Estudiant estudiante){
+        this.personas.add(estudiante);
+    }
+    public void imprimirInformacio() throws  Exception {
+        System.out.println(" El Institut es: " + this.nom1);
+        for (Persona p : personas) {
+            System.out.println(p.obtenerDades());
+        }
     }
 
-    public void Professor(String nom1) {
-        ArrayList<String> cars = new ArrayList<String>();
-        cars.add("Roberto");
-        cars.add("Luisa");
-        cars.add("German");
-        cars.add("Eduardo");
-    }
-
-    public void Estudiant(String nom2) {
-        ArrayList<String> cars = new ArrayList<String>();
-        cars.add("Raul");
-        cars.add("Manuel");
-        cars.add("Felipe");
-        cars.add("Andrea");
-    }
-
-    public String obtenerDades() {
-        return " El Professor se llama: " + this.nom1 + " Y el de Estudiant:  " + this.nom2;
-    }
 }

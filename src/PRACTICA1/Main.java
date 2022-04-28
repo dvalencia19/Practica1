@@ -3,45 +3,31 @@ package PRACTICA1;
 import java.util.Date;
 
 public class Main {
-    public static void main(String[] args) {
-        Persona p1 = new Persona();                                    //cree una persona
-        Persona p2 = new Persona();
+    public static void main(String[] args) throws Exception {
+        Institut ins = new Institut();
+        ins.Nominst("La Guineueta");
 
-
-        p1.canviarNom("Marc");
-        String dades = p1.obtenerDades();
-        System.out.println(dades);
-
-        p1.canviarNom("Albert");
-        dades = p1.obtenerDades();
-        System.out.println(dades);
-
-        Estudiant e = new Estudiant();
-        e.posarnota(7.00);
-        e.canviarNom("Daniel");
-        dades = e.obtenerDades();
-        System.out.println(dades);
-
-
-        Professor p = new Professor();
-        p.posarsou(1.500);
-        p.canviarNom("Raul");
-        dades = p.obtenerDades();
-        System.out.println(dades);
+        Professor profe1 = new Professor();
+        profe1.canviarNom("Marc");
+        profe1.canviarDNI("123445F");
+        ins.afegirProfe(profe1);
 
         ProfessorSubstitut pr = new ProfessorSubstitut();
-        pr.posarsou(1.700);
-        Date datainicial = new Date(2002, 3 ,12);
-        Date  datafi= new Date(2010, 2 ,5);
+        pr.canviarNom("Laura");
+        pr.canviarDNI("43545245Y");
+        Date datainicial = new Date(2021, 11, 1);
+        Date datafi = new Date(2022, 6, 30);
         pr.posardatafi(datafi);
         pr.posardatainicial(datainicial);
-        pr.canviarNom("Juan");
-        dades = pr.obtenerDades();
-        System.out.println(dades + " inicio en: " + datainicial.getDate() + "/" + datainicial.getMonth() + "/" + datainicial.getYear() + " y termino en: " + datafi.getDate() + "/" + datafi.getMonth() + "/" + datafi.getYear());
 
-        Institut inst = new Institut();
-        dades = inst.obtenerDades();
-        System.out.println(dades);
+        ins.afegirProfe(pr);
 
+        Estudiant e= new Estudiant();
+        e.canviarNom("Joan");
+        e.canviarDNI("131231A");
+        e.posarnota(7.5);
+        ins.afegirEstudiant(e);
+
+        ins.imprimirInformacio();
     }
 }
