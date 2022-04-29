@@ -12,7 +12,7 @@ public class ProfessorSubstitut extends Professor {
         this.datafi = datafi;
     }
     public String obtenerDades(){
-        return  super.obtenerDades();
+        return  super.obtenerDades() + " del: " + datainicial.getYear() + "/" + datainicial.getMonth() + "/" + datainicial.getDate() + " al: "+ datafi.getYear() + "/" + datafi.getMonth() + "/" + datafi.getDate() + ")";
     }
     }
 

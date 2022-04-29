@@ -8,17 +8,20 @@ public class Main {
         ins.Nominst("La Guineueta");
 
         Professor profe1 = new Professor();
+        profe1.posarsou(1.532);
         profe1.canviarNom("Marc");
         profe1.canviarDNI("123445F");
         ins.afegirProfe(profe1);
 
         ProfessorSubstitut pr = new ProfessorSubstitut();
         pr.canviarNom("Laura");
+        pr.posarsou(1.222);
         pr.canviarDNI("43545245Y");
         Date datainicial = new Date(2021, 11, 1);
         Date datafi = new Date(2022, 6, 30);
         pr.posardatafi(datafi);
         pr.posardatainicial(datainicial);
+
 
         ins.afegirProfe(pr);
 
