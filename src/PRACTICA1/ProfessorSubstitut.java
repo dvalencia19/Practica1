@@ -11,7 +11,7 @@ public class ProfessorSubstitut extends Professor {
     public void posardatafi(Date datafi){
         this.datafi = datafi;
     }
-    public String obtenerDades(){
+    public String obtenerDades() throws Exception{
         return  super.obtenerDades() + " del: " + datainicial.getYear() + "/" + datainicial.getMonth() + "/" + datainicial.getDate() + " al: "+ datafi.getYear() + "/" + datafi.getMonth() + "/" + datafi.getDate() + ")";
     }
     }

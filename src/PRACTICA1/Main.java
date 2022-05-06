@@ -11,7 +11,7 @@ public class Main {
         profe1.posarsou(1.532);
         profe1.canviarNom("Marc");
         profe1.canviarDNI("123445F");
-        ins.afegirProfe(profe1);
+        ins.afegirPersona(profe1);
 
         ProfessorSubstitut pr = new ProfessorSubstitut();
         pr.canviarNom("Laura");
@@ -23,13 +23,13 @@ public class Main {
         pr.posardatainicial(datainicial);
 
 
-        ins.afegirProfe(pr);
+        ins.afegirPersona(pr);
 
         Estudiant e= new Estudiant();
         e.canviarNom("Joan");
         e.canviarDNI("131231A");
         e.posarnota(7.5);
-        ins.afegirEstudiant(e);
+        ins.afegirPersona(e);
 
         ins.imprimirInformacio();
     }
