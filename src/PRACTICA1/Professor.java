@@ -12,6 +12,6 @@ public class Professor extends Persona {
         }
     }
     public String obtenerDades() throws Exception{
-        return super.obtenerDades() + " (que tiene un sueldo: " + this.sou + ")";
+        return "Profesor: " + super.obtenerDades() + " (que tiene un sueldo: " + this.sou + ")";
     }
 }

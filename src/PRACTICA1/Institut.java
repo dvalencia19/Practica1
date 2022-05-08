@@ -22,7 +22,7 @@ public class Institut {
 
 
     public void imprimirInformacio() throws  Exception {
-        System.out.println(" El Institut es: " + this.nom1);
+        System.out.println(" El Institut es: " + this.nom1 + ":" + "\n ----------------------------------------------------------------------------------------------------------------------------------------------");
         for (Persona p : personas) {
             System.out.println(p.obtenerDades());
         }

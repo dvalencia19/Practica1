@@ -29,8 +29,10 @@ public class Main {
         e.canviarNom("Joan");
         e.canviarDNI("131231A");
         e.posarnota(7.5);
+        e.posarnota(2.5);
+        e.posarnota(3.0);
+        e.posarnota(4.0);
         ins.afegirPersona(e);
-
         ins.imprimirInformacio();
     }
 }

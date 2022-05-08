@@ -19,7 +19,7 @@ public class Persona { //si hacemos solo una clase suele ser privado
         if (this.dni == null || this.nom == null) {
             throw new Exception("NO PUEDES ACCEDER A SUS DATOS PORQUE NO TIENE DNI O NO TIENE NOMBRE.");
         } else {
-            return " persona que es diu: " + this.nom + " Con el DNI: " + this.dni;
+            return  this.nom + " Con el DNI: " + this.dni;
 
         }
     }
