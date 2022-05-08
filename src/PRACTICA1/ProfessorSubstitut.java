@@ -12,7 +12,7 @@ public class ProfessorSubstitut extends Professor {
         this.datafi = datafi;
     }
     public String obtenerDades() throws Exception{
-        return  super.obtenerDades() + "\n * con Fecha de trabajo de:" + "\n · del: " + datainicial.getYear() + "/" + datainicial.getMonth() + "/" + datainicial.getDate() + "\n · al: "+ datafi.getYear() + "/" + datafi.getMonth() + "/" + datafi.getDate() ;
+        return  super.obtenerDades() + "\n * con Fecha de trabajo de:" + "\n + del: " + datainicial.getYear() + "/" + datainicial.getMonth() + "/" + datainicial.getDate() + "\n + al: "+ datafi.getYear() + "/" + datafi.getMonth() + "/" + datafi.getDate() ;
     }
     }
 

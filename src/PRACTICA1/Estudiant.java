@@ -41,12 +41,16 @@ public class Estudiant extends Persona {                 //tener lo de persona
         for (double num:  notas) {
             suma = suma + num;
             mediana= suma / notas.size();
-
         }
-
+        String resultado = "";
+        if (mediana < 5) {
+            resultado = "Reprobado";
+        } else {
+            resultado = "Aprobado";
+        }
         //me de lo mismo que persona mas la nota
-        return "Estudiante: " + super.obtenerDades() + " que tiene nota: " + this.notas + "\n con la nota maxima:" + "[" + max + "]" + " " +
-                "con nota minima de:" + "[" + min + "]" +" con mediana de:" + "[" +  mediana + "]" + ")";
+        return "Estudiante: " + super.obtenerDades() + " que tiene nota: " + this.notas + "\n * Nota maxima: " + "[" + max + "]" + " " +
+                "\n * Nota minima: " + "[" + min + "]" +"\n * Mediana: " + "[" +  mediana + "]" + " \n Resultado: " + resultado;
     }
 
 }
